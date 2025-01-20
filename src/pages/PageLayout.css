@@ -1,0 +1,31 @@
+.page-layout {
+    display: flex; 
+  }
+  
+  .page-content {
+    flex: 1; 
+    margin-left: 320px; 
+    padding: 20px; 
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .search-bar {
+    width: 60%;
+    margin-top: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
