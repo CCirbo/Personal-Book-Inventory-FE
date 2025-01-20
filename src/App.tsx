@@ -1,25 +1,26 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Library from "./pages/Library";
+import LoanedOut from "./pages/LoanedOut";
+import Selling from "./pages/Selling";
+import MenuBar from "./components/MenuBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Typescript if you dare
-        </a>
-      </header>
-    </div>
+   <>
+      
+      <MenuBar />
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/loaned_out" element={<LoanedOut />} />
+        <Route path="/selling" element={<Selling />} />
+      </Routes>
+ 
+      </>
   );
 }
 
